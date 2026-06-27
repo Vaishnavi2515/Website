@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Vaishnavi's Build</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS Global Script Embedded -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body class="dark-theme">
+    <header class="sticky-nav" id="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">VAISHNAVI's BUILD</a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About & Skills</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            <button id="theme-toggle" class="btn-theme">🌓</button>
+        </div>
+    </header>
+
+    <main class="container page-padding">
+        <h2 class="text-center" style="margin-bottom:45px;">Secure Client <span class="gradient-text">Onboarding</span></h2>
+        <div class="contact-wrapper">
+            <!-- Compact Premium Navigation Cards Grid -->
+            <div class="contact-grid-cards">
+                <a href="mailto:vaishusalunkhe2515@gmail.com" class="glass-card contact-uicard">
+                    <div class="icon">📧</div>
+                    <h4>Email Hub</h4>
+                    <p>vaishusalunkhe2515@gmail.com</p>
+                </a>
+                <a href="https://web.whatsapp.com/send?phone=919322047817&text=Hello%20Vaishnavi,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="glass-card contact-uicard">
+                    <div class="icon">💬</div>
+                    <h4>WhatsApp Link</h4>
+                    <p>Instant Routing</p>
+                </a>
+                <a href="https://www.linkedin.com/in/vaishnavi-salunkhe-a81335414" target="_blank" class="glass-card contact-uicard">
+                    <div class="icon">🔗</div>
+                    <h4>LinkedIn</h4>
+                    <p>Corporate Profile</p>
+                </a>
+                <a href="https://github.com/VaishnaviPrakashalunkhe2515-spec" target="_blank" class="glass-card contact-uicard">
+                    <div class="icon">🐙</div>
+                    <h4>GitHub</h4>
+                    <p>Source Deployments</p>
+                </a>
+            </div>
+
+            <!-- Freelancer Stack Premium Glassmorphism Form -->
+            <div class="glass-card">
+                <form id="secure-onboarding-form" novalidate>
+                    <div class="form-group">
+                        <label for="clientName">Full Name</label>
+                        <input type="text" id="clientName" placeholder="Enter your full name">
+                        <span class="error-msg" id="err-clientname"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="clientEmail">Email Address</label>
+                        <input type="email" id="clientEmail" placeholder="name@example.com">
+                        <span class="error-msg" id="err-clientemail"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="clientPhone">Phone Coordinates</label>
+                        <input type="tel" id="clientPhone" placeholder="10-digit mobile number">
+                        <span class="error-msg" id="err-clientphone"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="clientService">Service Required</label>
+                        <select id="clientService">
+                            <option value="">-- Select Target Architecture --</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Full Stack Website">Full Stack Operations</option>
+                            <option value="E-Commerce Solutions">E-Commerce Development</option>
+                            <option value="UIUX Prototyping">UI/UX Strategy Matrix</option>
+                            <option value="MVP Engineering">MVP Deployment Blueprint</option>
+                        </select>
+                        <span class="error-msg" id="err-clientservice"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="clientMessage">Project Parameters Description</label>
+                        <textarea id="clientMessage" rows="5" placeholder="Describe your project requirements here (20-500 chars)..."></textarea>
+                        <span class="error-msg" id="err-clientmessage"></span>
+                    </div>
+                    <button type="submit" id="onboarding-submit-btn">
+                        <div class="btn-spinner" id="btnSpinner"></div>
+                        <span id="btnText">Initiate Launch Sequence</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- INDUSTRY LEVEL RESPONSIVE POPUP MODAL DIALOGUE -->
+    <div class="modal-overlay" id="statusModalOverlay">
+        <div class="premium-modal">
+            <div class="modal-icon" id="modalIcon">✔</div>
+            <div class="modal-title" id="modalTitle">Transmission Successful!</div>
+            <div class="modal-desc" id="modalDesc">Thank you! Your request has been submitted successfully. We will contact you soon.</div>
+            <button class="modal-close-btn" id="modalCloseBtn">Acknowledge</button>
+        </div>
+    </div>
+
+    <!-- Global Premium Footer Embedded Across Pages -->
+    <footer class="premium-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3 class="gradient-text">VAISHNAVI's BUILD</h3>
+                <p style="font-style:italic; margin-bottom:12px; font-weight:500;">Dream it, I'll Build it..!!</p>
+                <p>"Helping businesses and individuals transform ideas into powerful digital experiences."</p>
+            </div>
+            <div class="footer-links">
+                <h4 style="margin-bottom:16px;">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About & Skills</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <h4 style="margin-bottom:16px;">Connect Globally</h4>
+                <div class="social-cards-row">
+                    <a href="https://github.com/VaishnaviPrakashalunkhe2515-spec" target="_blank" class="social-glow-card" data-tooltip="GitHub Profile">🐙</a>
+                    <a href="https://www.linkedin.com/in/vaishnavi-salunkhe-a81335414" target="_blank" class="social-glow-card" data-tooltip="LinkedIn Network">🔗</a>
+                    <a href="https://web.whatsapp.com/send?phone=919322047817&text=Hello%20Vaishnavi,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="social-glow-card" data-tooltip="WhatsApp Direct">💬</a>
+                    <a href="mailto:vaishusalunkhe2515@gmail.com" class="social-glow-card" data-tooltip="Direct Email">📧</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom-bar">
+            <p>&copy; 2026 Vaishnavi Salunkhe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div class="toast-box" id="toast-bin"></div>
+    <script src="script.js"></script>
+</body>
+</html>
